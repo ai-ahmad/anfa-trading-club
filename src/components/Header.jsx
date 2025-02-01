@@ -30,9 +30,10 @@ const Header = () => {
           
           <a
             href="/"
-            className="text-2xl font-bold text-white"
+            className="text-2xl font-bold flex justify-center items-center gap-3 text-white"
           >
-            ANFA TRADING CLUB
+            ANFA TRADING CLUB 
+          <img src="/logo.jpg" alt="logo" className="w-[50px] h-[50px] rounded-[200px]"/>
           </a>
           <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (

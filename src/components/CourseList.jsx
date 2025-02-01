@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Globe, MapPin, Crown, CheckCircle } from "lucide-react";
+import { Globe, Crown, CheckCircle } from "lucide-react";
 
 export default function CourseTypes() {
   const textVariants = {
@@ -22,7 +22,7 @@ export default function CourseTypes() {
       icon: Globe,
       features: [
         "Malysian SNR va ANFA SNR ",
-        "Avtoriskiy strategya stabil ishlashka",
+        "Avtoriskiy strategya stabil ishlashga",
         "Bozor psihologiyasi",
         "Live trade",
         "Money/Risk management",
@@ -40,6 +40,8 @@ export default function CourseTypes() {
       features: [
         "Kuniga 5-10 ta signal beriladi 100%",
         "Garant 5.000pips - 10.000pips ",
+        "Live trade",
+        "Avtoriskiy strategya stabil ishlashga"
       ],
       buttonText: "VIP ga Qo'shilish",
       buttonLink: "https://t.me/ANFAFX1",
@@ -53,7 +55,6 @@ export default function CourseTypes() {
         "Malysian SNR va ANFA SNR ",
         "Avtoriskiy strategya stabil ishlashka",
         "Bozor psihologiyasi",
-        "Liev trade",
         "Money/Risk management",
         "Support 24/7",
         "Discord + Vip qoshilish imkoniyati",
