@@ -22,7 +22,7 @@ export default function CourseTypes() {
       icon: Globe,
       features: [
         "Malysian SNR va ANFA SNR ",
-        "Avtoriskiy strategya stabil ishlashga",
+        "Shaxsiy strategiya stabil daromad uchun",
         "Bozor psihologiyasi",
         "Live trade",
         "Money/Risk management",
@@ -41,7 +41,7 @@ export default function CourseTypes() {
         "Kuniga 5-10 ta signal beriladi 100%",
         "Garant 5.000pips - 10.000pips ",
         "Live trade",
-        "Avtoriskiy strategya stabil ishlashga"
+        "Shaxsiy strategiya stabil daromad uchun"
       ],
       buttonText: "VIP ga Qo'shilish",
       buttonLink: "https://t.me/ANFAFX1",
@@ -53,7 +53,7 @@ export default function CourseTypes() {
       icon: Crown,
       features: [
         "Malysian SNR va ANFA SNR ",
-        "Avtoriskiy strategya stabil ishlashga",
+        "Shaxsiy strategiya stabil daromad uchun",
         "Bozor psihologiyasi",
         "Money/Risk management",
         "Support 24/7",
