@@ -1,5 +1,5 @@
 import React from "react"
-import { FaInstagram, FaTelegram, FaYoutube, FaTiktok, FaChartLine } from "react-icons/fa"
+import { FaInstagram, FaTelegram, FaChartLine } from "react-icons/fa"
 import { motion } from "framer-motion"
 
 export default function Footer() {
