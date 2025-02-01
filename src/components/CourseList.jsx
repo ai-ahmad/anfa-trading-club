@@ -53,7 +53,7 @@ export default function CourseTypes() {
       icon: Crown,
       features: [
         "Malysian SNR va ANFA SNR ",
-        "Avtoriskiy strategya stabil ishlashka",
+        "Avtoriskiy strategya stabil ishlashga",
         "Bozor psihologiyasi",
         "Money/Risk management",
         "Support 24/7",
