@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Book, Users, TrendingUp, CheckCircle, User, ChevronRight } from 'lucide-react';
+import { Book, Users, TrendingUp, CheckCircle, User } from 'lucide-react';
 
 const TradingCourseBanner: React.FC = () => {
   const InfoCard: React.FC<{ title: string; children: React.ReactNode; delay: number; icon: React.ReactNode }> = ({
