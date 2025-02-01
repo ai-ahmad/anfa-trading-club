@@ -32,7 +32,7 @@ const BrokerCards = () => {
       ],
       bonus: "Exness Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
       registrationLink: "https://www.exness.com/",
-      videoLink: "/exness.MOV",
+      videoLink: "/IMG_0820.MOV",
     },
     {
       name: "A Markets",
