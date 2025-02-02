@@ -45,7 +45,7 @@ const BrokerCards = () => {
         { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
       ],
       bonus: "A Markets Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
-      registrationLink: "https://info0201.amarkets.marketing/",
+      registrationLink: "https://profit-market.info/fx/?g=IDSA92",
       videoLink: "/metatrader-ulanish_DNxLPWdw.mp4",
     },
   ];
