@@ -32,7 +32,7 @@ const BrokerCards = () => {
       ],
       bonus: "Exness Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
       registrationLink: "https://one.exnesstrack.org/a/sq4bj54zcx",
-      videoLink: "/IMG_0820.MOV",
+      videoLink: "/exness.MOV",
     },
     {
       name: "A Markets",
@@ -46,7 +46,7 @@ const BrokerCards = () => {
       ],
       bonus: "A Markets Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
       registrationLink: "https://info0201.amarkets.marketing/",
-      videoLink: "/amarket.mp4",
+      videoLink: "/metatrader-ulanish_DNxLPWdw.mp4",
     },
   ];
 
