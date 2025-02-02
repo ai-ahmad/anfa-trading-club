@@ -18,7 +18,7 @@ const BrokerCards = () => {
       ],
       bonus: "Libertex Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
       registrationLink: "https://go.libertex-affiliates.com/visit/?bta=64574&nci=21880",
-      videoLink: "/libertext.MOV",
+      videoLink: "/libertext_VQcgDRAu.mp4",
     },
     {
       name: "Exness",
