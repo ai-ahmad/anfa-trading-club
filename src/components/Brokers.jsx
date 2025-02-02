@@ -31,7 +31,7 @@ const BrokerCards = () => {
         { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
       ],
       bonus: "Exness Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
-      registrationLink: "https://www.exness.com/",
+      registrationLink: "https://one.exnesstrack.org/a/sq4bj54zcx",
       videoLink: "/IMG_0820.MOV",
     },
     {
