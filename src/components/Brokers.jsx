@@ -116,11 +116,12 @@ const BrokerCards = () => {
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <div className="relative w-3/4 max-w-2xl">
             <button
-              className="absolute top-2  text-white text-2xl right-[-200px]"
-              onClick={closeVideo} // Close video modal using the closeVideo function
+              className="absolute top-2 right-2 text-white text-2xl z-50 bg-gray-700 rounded-full p-2 hover:bg-gray-600 transition"
+              onClick={closeVideo}
             >
               <FaTimes />
             </button>
+
             <video src={selectedVideo} controls className="w-full rounded-lg h-[400px]" />
           </div>
         </div>
