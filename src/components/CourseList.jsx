@@ -123,7 +123,7 @@ export default function CourseTypes() {
           Sizning ehtiyojlaringizga mos kurslarni tanlang!
         </motion.p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -165,7 +165,7 @@ export default function CourseTypes() {
             </div>
           ))}
     {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
+        <div className="fixed z-[9999] inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
           <div className="bg-[#141B2A] p-6 rounded-lg w-full max-w-md relative">
             <button onClick={closeModal} className="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-800">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
