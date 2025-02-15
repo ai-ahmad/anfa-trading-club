@@ -51,7 +51,7 @@ export default function CourseTypes() {
 
   const courses = [
     {
-      title: "Online Folks",
+      title: "Online Wolf",
       type: "Online Course",
       price: "$359",
       originalPrice: "$400",
