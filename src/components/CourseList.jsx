@@ -79,7 +79,7 @@ export default function CourseTypes() {
     {
       title: "Online Wolf",
       type: "Online Course",
-      price: "2 ta joy qoldi",
+      price: "2 ta joy mavjud!",
       originalPrice: "",
       icon: Globe,
       features: [
