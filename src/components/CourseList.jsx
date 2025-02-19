@@ -53,8 +53,8 @@ export default function CourseTypes() {
     {
       title: "Online Wolf",
       type: "Online Course",
-      price: "$359",
-      originalPrice: "$400",
+      price: "",
+      originalPrice: "",
       icon: Globe,
       features: [
         "Malysian SNR va ANFA SNR ",
