@@ -139,7 +139,7 @@ export default function CourseTypes() {
                 <h3 className="text-xl font-bold text-white mb-3">{course.title}</h3>
                 <div className="flex items-baseline gap-2">
                   <span className="line-through text-gray-500 text-sm">{course.originalPrice}</span>
-                  <span className="text-2xl font-bold text-blue-400">{course.price}</span>
+                  <span className="text-2xl font-bold text-red-500">{course.price}</span>
                 </div>
               </div>
 
