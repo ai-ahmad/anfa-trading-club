@@ -1,14 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { motion } from "framer-motion";
 import { Globe, Crown, CheckCircle } from "lucide-react";
 
 export default function CourseTypes() { 
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [formData, setFormData] = useState({ name: "", surname: "", phone: "" });
   const [isFormValid, setIsFormValid] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
+  function calculateTimeLeft() {
+    const targetDate = new Date("2025-02-25T00:00:00").getTime();
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    if (difference > 0) {
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Логирование внутри компонента
+  console.log("Оставшееся время:", timeLeft);
 
   const openModal = (course) => {
     setSelectedCourse(course);
@@ -100,7 +126,7 @@ export default function CourseTypes() {
       buttonLink: "https://t.me/ANFAFX1",
     },
   ];
-
+ console.log(timeLeft)
   return (
   <div id="CourseTypes">
       <motion.section
@@ -124,46 +150,55 @@ export default function CourseTypes() {
         </motion.p>
 
         <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {courses.map((course, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 flex flex-col"
-            >
-              <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-5">
-                <div className="flex items-center gap-2 mb-3">
-                  <course.icon className="h-5 w-5 text-blue-400" />
-                  <span className="bg-blue-500/20 text-blue-400 text-xs font-medium px-2 py-1 rounded-full">
-                    {course.type}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">{course.title}</h3>
-                <div className="flex items-baseline gap-2">
-                  <span className="line-through text-gray-500 text-sm">{course.originalPrice}</span>
-                  <span className="text-2xl font-bold text-red-500">{course.price}</span>
-                </div>
-              </div>
+        {courses.map((course, index) => (
+  <div
+    key={index}
+    className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 flex flex-col relative"
+  >
+    {/* Отображаем таймер только для первого курса */}
+    {index === 0 && (
+      <div className="absolute top-0 right-0 bg-black/50 px-3 py-1 rounded-md text-white text-xs">
+        {timeLeft.days} kun {timeLeft.hours} soat {timeLeft.minutes} daqiqa {timeLeft.seconds} soniya
+      </div>
+    )}
 
-              <div className="p-5 flex-grow border-t border-gray-700">
-                <ul className="space-y-2 text-sm">
-                  {course.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-400 shrink-0 mt-0.5" />
-                      <span className="text-gray-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+    <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-5">
+      <div className="flex items-center gap-2 mb-3">
+        <course.icon className="h-5 w-5  text-blue-400" />
+        <span className="bg-blue-500/20 mt-2 text-blue-400 text-xs font-medium px-2 py-1 rounded-full">
+          {course.type}
+        </span>
+      </div>
 
-              <div className="p-5 border-t border-gray-700">
-                <button
-                onClick={() => openModal(course)}
-                className="w-full bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg text-center block"
-              >
-                {course.buttonText}
-              </button>
-              </div>
-            </div>
-          ))}
+      <h3 className="text-xl font-bold text-white mb-3">{course.title}</h3>
+      <div className="flex items-baseline gap-2">
+        <span className="line-through text-gray-500 text-sm">{course.originalPrice}</span>
+        <span className="text-2xl font-bold text-red-500">{course.price}</span>
+      </div>
+    </div>
+
+    <div className="p-5 flex-grow border-t border-gray-700">
+      <ul className="space-y-2 text-sm">
+        {course.features.map((feature, idx) => (
+          <li key={idx} className="flex items-start gap-2">
+            <CheckCircle className="h-4 w-4 text-blue-400 shrink-0 mt-0.5" />
+            <span className="text-gray-300">{feature}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div className="p-5 border-t border-gray-700">
+      <button
+        onClick={() => openModal(course)}
+        className="w-full bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg text-center block"
+      >
+        {course.buttonText}
+      </button>
+    </div>
+  </div>
+))}
+
     {isModalOpen && (
         <div className="fixed z-[9999] inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
           <div className="bg-[#141B2A] p-6 rounded-lg w-full max-w-md relative">
