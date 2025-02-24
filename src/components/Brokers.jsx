@@ -8,7 +8,7 @@ const BrokerCards = () => {
   const brokers = [
     {
       name: "Libertex",
-      image: "https://sjc.microlink.io/6tp5zu7CTy5MjTYdlBQTh9IrbqQ7oiuVD-dIVosb8IkWAmgCFYy7qwPRpA6FjUvE3RvsKkdwdZy4owVWKSkSIA.jpeg",
+      image: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/55/aa/9855aa44-bd01-33fe-6c19-2a0152112674/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/1200x600wa.png",
       description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
       features: [
         { icon: <FaChartLine />, text: "CFD va Forex savdosi" },
@@ -47,6 +47,20 @@ const BrokerCards = () => {
       bonus: "A Markets Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
       registrationLink: "https://profit-market.info/fx/?g=IDSA92",
       videoLink: "/metatrader-ulanish_DNxLPWdw.mp4",
+    },
+    {
+      name: "Weltrade",
+      image: "https://www.weltrade.com/uz/images/wt_preview.png",
+      description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
+      features: [
+        { icon: <FaChartLine />, text: "CFD va Forex savdosi" },
+        { icon: <FaShieldAlt />, text: "Salbiy balans himoyasi" },
+        { icon: <FaGlobe />, text: "Ko'p aktivli savdo" },
+        { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
+      ],
+      bonus: "Uzcard, Humo, Click orqali to'lov qiling",
+      registrationLink: "https://track.gowt.me/visit/?bta=35299&brand=weltrade",
+      videoLink: "/video.mp4",
     },
   ];
 
