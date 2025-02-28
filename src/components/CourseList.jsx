@@ -10,7 +10,8 @@ export default function CourseTypes() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
-    const targetDate = new Date("2025-02-25T00:00:00").getTime();
+    const targetDate = new Date("2025-03-06T00:00:00").getTime();
+
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -77,9 +78,9 @@ export default function CourseTypes() {
 
   const courses = [
     {
-      title: "Online Wolf",
+      title: "Offline Course",
       type: "Online Course",
-      price: "2 ta joy mavjud!",
+      price: "5 ta joy mavjud!",
       originalPrice: "",
       icon: Globe,
       features: [
@@ -87,6 +88,7 @@ export default function CourseTypes() {
         "Shaxsiy strategiya stabil daromad uchun",
         "Bozor psihologiyasi",
         "Live trade",
+        "Support",
         "Money/Risk management",
         "Discord + Vip 2oy imkoniyati"
       ],
