@@ -10,7 +10,7 @@ export default function CourseTypes() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
-    const targetDate = new Date("2025-03-06T00:00:00").getTime();
+    const targetDate = new Date("2025-03-15T00:00:00").getTime();
 
     const now = new Date().getTime();
     const difference = targetDate - now;
@@ -80,8 +80,8 @@ export default function CourseTypes() {
     {
       title: "Offline Course",
       type: "Online Course",
-      price: "5 ta joy mavjud!",
-      originalPrice: "",
+      price: "300$",
+      originalPrice: "659$",
       icon: Globe,
       features: [
         "Malysian SNR va ANFA SNR ",
