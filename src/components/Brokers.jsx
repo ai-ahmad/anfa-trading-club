@@ -7,48 +7,6 @@ const BrokerCards = () => {
 
   const brokers = [
     {
-      name: "Libertex",
-      image: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/55/aa/9855aa44-bd01-33fe-6c19-2a0152112674/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/1200x600wa.png",
-      description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
-      features: [
-        { icon: <FaChartLine />, text: "CFD va Forex savdosi" },
-        { icon: <FaShieldAlt />, text: "Salbiy balans himoyasi" },
-        { icon: <FaGlobe />, text: "Ko'p aktivli savdo" },
-        { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
-      ],
-      bonus: "Libertex Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
-      registrationLink: "https://go.libertex-affiliates.com/visit/?bta=64574&nci=21880",
-      videoLink: "/libertext_VQcgDRAu.mp4",
-    },
-    {
-      name: "Exness",
-      image: "https://media.licdn.com/dms/image/v2/D5612AQGyqKN33EOreg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1731655358155?e=2147483647&v=beta&t=KelReU4YBM9qy7-6Ey0wHlVSyDl4hXdxSCC0JjAi4yI",
-      description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
-      features: [
-        { icon: <FaChartLine />, text: "CFD va Forex savdosi" },
-        { icon: <FaShieldAlt />, text: "Salbiy balans himoyasi" },
-        { icon: <FaGlobe />, text: "Ko'p aktivli savdo" },
-        { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
-      ],
-      bonus: "Exness Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
-      registrationLink: "https://one.exnesstrack.org/a/sq4bj54zcx",
-      videoLink: "/exness.MOV",
-    },
-    {
-      name: "A Markets",
-      image: "https://www.amarkets.org/wp-content/uploads/2023/11/Online-broker-AMarkets-black.jpg",
-      description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
-      features: [
-        { icon: <FaChartLine />, text: "CFD va Forex savdosi" },
-        { icon: <FaShieldAlt />, text: "Salbiy balans himoyasi" },
-        { icon: <FaGlobe />, text: "Ko'p aktivli savdo" },
-        { icon: <FaMobileAlt />, text: "Mukofotlangan mobil ilova" },
-      ],
-      bonus: "A Markets Brokerdan ro'yxatdan o'tib 30$ bonus oling!",
-      registrationLink: "https://profit-market.info/fx/?g=IDSA92",
-      videoLink: "/metatrader-ulanish_DNxLPWdw.mp4",
-    },
-    {
       name: "Weltrade",
       image: "https://www.weltrade.com/uz/images/wt_preview.png",
       description: "Innovatsion broker, ham yangi, ham tajribali treyderlarga qulay platforma taqdim etadi.",
