@@ -78,6 +78,43 @@ export default function CourseTypes() {
 
   const courses = [
     {
+      title: "Silver Course",
+      type: "Silver Course",
+      price: "500$",
+      originalPrice: "659$",
+      icon: Globe,
+      features: [
+        "Malysian SNR va ANFA SNR ",
+        "Shaxsiy strategiya stabil daromad uchun",
+        "Bozor psihologiyasi",
+        "Live trade",
+        "Support",
+        "Money/Risk management",
+        "Discord + Vip 2oy imkoniyati"
+      ],
+      buttonText: "Kursga Yozilish",
+      buttonLink: "https://t.me/ANFAFX1",
+    },
+    {
+      title: "Gold Course",
+      type: "Gold Course",
+      price: "1000$",
+      originalPrice: "1200$",
+      icon: Globe,
+      features: [
+        "Malysian SNR va ANFA SNR ",
+        "Shaxsiy strategiya stabil daromad uchun",
+        "Bozor psihologiyasi",
+        "Live trade",
+        "Support",
+        "Team building",
+        "Money/Risk management",
+        "Discord + Vip 2oy imkoniyati"
+      ],
+      buttonText: "Kursga Yozilish",
+      buttonLink: "https://t.me/ANFAFX1",
+    },
+    {
       title: "Offline Course",
       type: "Online Course",
       price: "300$",
@@ -158,11 +195,11 @@ export default function CourseTypes() {
     className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 flex flex-col relative"
   >
     {/* Отображаем таймер только для первого курса */}
-    {index === 0 && (
+    {/* {index === 0 && (
       <div className="absolute top-0 right-0 bg-black/50 px-3 py-1 rounded-md text-white text-xs">
         {timeLeft.days} kun {timeLeft.hours} soat {timeLeft.minutes} daqiqa {timeLeft.seconds} soniya
       </div>
-    )}
+    )} */}
 
     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-5">
       <div className="flex items-center gap-2 mb-3">
