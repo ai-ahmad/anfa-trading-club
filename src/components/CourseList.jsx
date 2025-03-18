@@ -114,24 +114,24 @@ export default function CourseTypes() {
       buttonText: "Kursga Yozilish",
       buttonLink: "https://t.me/ANFAFX1",
     },
-    {
-      title: "Offline Course",
-      type: "Online Course",
-      price: "300$",
-      originalPrice: "659$",
-      icon: Globe,
-      features: [
-        "Malysian SNR va ANFA SNR ",
-        "Shaxsiy strategiya stabil daromad uchun",
-        "Bozor psihologiyasi",
-        "Live trade",
-        "Support",
-        "Money/Risk management",
-        "Discord + Vip 2oy imkoniyati"
-      ],
-      buttonText: "Kursga Yozilish",
-      buttonLink: "https://t.me/ANFAFX1",
-    },
+    // {
+    //   title: "Offline Course",
+    //   type: "Online Course",
+    //   price: "300$",
+    //   originalPrice: "659$",
+    //   icon: Globe,
+    //   features: [
+    //     "Malysian SNR va ANFA SNR ",
+    //     "Shaxsiy strategiya stabil daromad uchun",
+    //     "Bozor psihologiyasi",
+    //     "Live trade",
+    //     "Support",
+    //     "Money/Risk management",
+    //     "Discord + Vip 2oy imkoniyati"
+    //   ],
+    //   buttonText: "Kursga Yozilish",
+    //   buttonLink: "https://t.me/ANFAFX1",
+    // },
     {
       title: "VIP Kanal + Discord",
       type: "VIP Channel",
