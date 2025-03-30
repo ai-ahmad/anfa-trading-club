@@ -90,7 +90,7 @@ export default function CourseTypes() {
         "Live trade",
         "Support",
         "Money/Risk management",
-        "Discord + Vip 2oy imkoniyati"
+        "Vip 2oy imkoniyati"
       ],
       buttonText: "Kursga Yozilish",
       buttonLink: "https://t.me/ANFAFX1",
@@ -109,7 +109,7 @@ export default function CourseTypes() {
         "Support",
         "Team building",
         "Money/Risk management",
-        "Discord + Vip 2oy imkoniyati"
+        "Vip 2oy imkoniyati"
       ],
       buttonText: "Kursga Yozilish",
       buttonLink: "https://t.me/ANFAFX1",
@@ -158,7 +158,7 @@ export default function CourseTypes() {
         "Bozor psihologiyasi",
         "Money/Risk management",
         "Support 24/7",
-        "Discord + Vip qoshilish imkoniyati",
+        "Vip qoshilish imkoniyati",
         "Live trade",
       ],
       buttonText: "Kursga Yozilish",
