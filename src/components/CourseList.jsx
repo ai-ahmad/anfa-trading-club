@@ -78,10 +78,10 @@ export default function CourseTypes() {
 
   const courses = [
     {
-      title: "Silver Course",
-      type: "Silver Course",
-      price: "500$",
-      originalPrice: "659$",
+      title: "Offline Course",
+      type: "Offline Course",
+      price: "700$",
+      originalPrice: "780$",
       icon: Globe,
       features: [
         "Malysian SNR va ANFA SNR ",
@@ -89,25 +89,6 @@ export default function CourseTypes() {
         "Bozor psihologiyasi",
         "Live trade",
         "Support",
-        "Money/Risk management",
-        "Vip 2oy imkoniyati"
-      ],
-      buttonText: "Kursga Yozilish",
-      buttonLink: "https://t.me/ANFAFX1",
-    },
-    {
-      title: "Gold Course",
-      type: "Gold Course",
-      price: "1000$",
-      originalPrice: "1200$",
-      icon: Globe,
-      features: [
-        "Malysian SNR va ANFA SNR ",
-        "Shaxsiy strategiya stabil daromad uchun",
-        "Bozor psihologiyasi",
-        "Live trade",
-        "Support",
-        "Team building",
         "Money/Risk management",
         "Vip 2oy imkoniyati"
       ],
@@ -133,7 +114,7 @@ export default function CourseTypes() {
     //   buttonLink: "https://t.me/ANFAFX1",
     // },
     {
-      title: "VIP Kanal + Discord",
+      title: "VIP Kanal",
       type: "VIP Channel",
       price: "750,000",
       originalPrice: "1000,000",
